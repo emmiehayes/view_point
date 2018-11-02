@@ -21,6 +21,8 @@ gem 'coffee-rails', '~> 4.2'
 gem 'jbuilder', '~> 2.5'
 # Securely configure Rails applications using ENV
 gem 'figaro'
+# CSS framework 
+gem 'bulma-rails', '~> 0.7.1'
 
 group :development, :test do
   gem 'capybara'
