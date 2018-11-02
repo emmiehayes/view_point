@@ -1,0 +1,14 @@
+language: ruby
+cache:
+- bundler
+before_script:
+- bundle exec rake db:create
+- bundle exec rake db:migrate
+deploy:
+  provider: heroku
+  api_key:
+     secure: "QpB5V/Ymx1LyCwmx00Pz0PLwfgMh1QaP7zDTL2mNF4S3McEI7A6dIKIl5DT4t4tBDB6lLQ7RmBIA8sY5Yifm5qVaxgviAOk32XVxM7FAKL2OELPullgsqiy5odZVqi+hF2Q+glPlUCxefAoLlJb6FeVhiQqjGFlSQ/6oGbd3GW4Ma2uTUiSE9BWKFkJ8VtyS0wVSWxU5yXmpdiZAfcRBTcZUSttJjhuqPtRHlxsnRJf+9QgTEHXqHPy2CLxve+VNw74R+qwSvBuhDhN7gdyM1Kuy4jYFzyU3fTb2cXytvRRRjDZ8HUhpxEIOzVb9gx2OCZ2HUNIY005pqoFPupqgL1veJK3HYb1Mo/BTYclKl58vctbohqnoPc7oBrnEFdrRgi6WkjNlyYFGOg9YsucKRUOLdk4mdIiiIylmGrWBCd9hyQpICVsfR9q9Wxy/qGucqGC9kowWVV/zMqjjOrf4yRChFIoYa7wBdnm8KuW0jJJQRaic1ZY9JNzuLFdo+GNQeE4e93D/OGO+VYjsy6oGgIxrj5qZ7Cz8AS9R8M5E3FZk7EOd8VzPYf2RCCJgvv17Agd1xOX4+fTk79KufPAHoPW+0wN9iXZB06yxEljHYtljlkQN3C1X5D+5yobQFDMcuz0e77hYgFxPZbNaL1OqT7QdUc2hh3liMB9Zz6EomBs="
+  app: pure-caverns-53726
+  on:
+    repo: emmiehayes/view-point
+    
