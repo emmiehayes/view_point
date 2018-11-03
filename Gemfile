@@ -23,6 +23,8 @@ gem 'jbuilder', '~> 2.5'
 gem 'figaro'
 # CSS framework 
 gem 'bulma-rails', '~> 0.7.1'
+# Open Authorization
+gem 'omniauth-google-oauth2'
 
 group :development, :test do
   gem 'capybara'
