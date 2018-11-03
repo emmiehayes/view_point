@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get '/auth/:provider/callback',  to: 'sessions#create'
   get '/auth/failure',             to: redirect('/')
   delete '/logout',                to: 'sessions#destroy'
+
+  get '/dashboard', to: 'dashboard#show'
 end
