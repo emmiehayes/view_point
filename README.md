@@ -45,7 +45,7 @@ Use the TasteDive API to create a recommendations app based on users preferences
 ## Testing
 - This application utilizes RSpec, Capybara, FactoryBot and Webmock for testing.
 - SimpleCov is used to track test coverage.
-- In order to execute all tests, run the command `rspec` in the terminal.
+<img alt="simple-cov" src="https://imgplaceholder.com/420x320/ff7f7f/333333/fa-image">
   
 ## TakeAways
   TBD
