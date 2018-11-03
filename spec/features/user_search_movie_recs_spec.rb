@@ -14,5 +14,12 @@ describe 'An authenticated user' do
     click_button 'Search'
 
     expect(current_path).to eq('/search')
+    expect(page).to have_css(".movie", count: 20)
+
+    within(first(".movie")) do
+      expect(page).to have_css(".title")
+      expect(page).to have_css(".poster")
+      expect(page).to have_css(".summary")
+    end
   end
 end
