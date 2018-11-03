@@ -24,7 +24,7 @@
       <h1 class="title">
         Watch List
       </h1>
-    <% current_user.watch_list.each do |movie| %>
+    <% current_user.movies.each do |movie| %>
     <ul class="movie">
       <li class="title"><%= movie.title %></li>
     </ul>
