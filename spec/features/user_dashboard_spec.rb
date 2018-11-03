@@ -27,7 +27,7 @@ describe 'An authenticated user on their dashboard' do
   scenario 'has an empty watch list to start' do
     visit dashboard_path
     expect(page).to have_content('Watch List')
-    expect(page).to have_css(".watch-list", count: 0)
+    expect(page).to have_css(".movie", count: 0)
   end
 end
 
