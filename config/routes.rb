@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   delete '/logout',                to: 'sessions#destroy'
 
   get '/dashboard', to: 'dashboard#show'
+  get '/search', to: 'dashboard#index'
 end

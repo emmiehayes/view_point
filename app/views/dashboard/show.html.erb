@@ -1,9 +1,23 @@
 <section class="hero is-info is-fullheight">
+  <div class="control">
+    <%= button_to 'Sign Out', logout_path, method: :delete, class: "button is-outlined is-small is-warning" %>
+  </div>
   <div class="hero-body">
     <div class="container">
       <h1 class="title">
-        <a class="control"><%= button_to 'Sign Out', logout_path, method: :delete, class: "button is-outlined is-small is-warning" %></a>
+        HELLO FRIEND
       </h1>
+      <div class="container is-fluid has-text-centered">
+      <%= form_tag '/search', :method => 'get' do %>
+        <div class="field">
+          <div class="control">
+            <%= text_field_tag "search" %>
+          </div><br>
+          <div class="control">
+            <%= submit_tag 'Search', class: "button is-warning is-outlined" %>
+          </div>
+        </div>
+      <% end %>
     </div>
   </div>
 </section>
