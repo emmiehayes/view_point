@@ -1,4 +1,4 @@
-class Movie
+class RecommendedMovie
 
   def initialize(data)
     @data = data 

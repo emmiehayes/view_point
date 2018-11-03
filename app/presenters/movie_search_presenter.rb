@@ -6,7 +6,7 @@ class MovieSearchPresenter
 
   def movies 
    service.raw_search_results.map do |result|
-      Movie.new(result)
+      RecommendedMovie.new(result)
     end
   end
 
