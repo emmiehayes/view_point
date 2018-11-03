@@ -1,6 +1,7 @@
 class SearchController < ApplicationController
-  
+
   def index 
+    redirect_to root_path unless current_user
     @presenter = MovieSearchPresenter.new(search_params[:search])
   end
 
@@ -10,3 +11,4 @@ class SearchController < ApplicationController
     params.permit(:search)
   end
 end
+
