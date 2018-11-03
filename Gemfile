@@ -25,6 +25,8 @@ gem 'figaro'
 gem 'bulma-rails', '~> 0.7.1'
 # Open Authorization
 gem 'omniauth-google-oauth2'
+# HTTP client library
+gem 'faraday'
 
 group :development, :test do
   gem 'capybara'
