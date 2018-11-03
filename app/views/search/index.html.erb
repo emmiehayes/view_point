@@ -1,7 +1,7 @@
 <% @presenter.movies.each do |movie| %>
 <ul class="movie">
-  <li class="title"><%= movie.name %></li>
-  <li class="poster"><%= movie.role %></li>
-  <li class="summary"><%= movie.party %></li>
+  <li class="title"><%= movie.title %></li>
+  <li class="summary"><%= movie.summary %></li>
+  <li class="trailer"><%= embed(movie.trailer_url) %></li>
 </ul>
 <% end %>

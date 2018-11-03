@@ -20,8 +20,8 @@ describe 'An authenticated user' do
 
     within(first(".movie")) do
       expect(page).to have_css(".title")
-      expect(page).to have_css(".poster")
       expect(page).to have_css(".summary")
+      expect(page).to have_css(".trailer")
     end
   end
 end
