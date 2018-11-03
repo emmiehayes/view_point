@@ -1,4 +1,4 @@
-# viewpoint
+# :movie_camera: VIEWPOINT
 [![Build Status](https://travis-ci.org/emmiehayes/view_point.svg?branch=master)](https://travis-ci.org/emmiehayes/view_point)
 
 ## Table of Contents
@@ -17,7 +17,7 @@
 The purpose of this application is to provide users with new movie suggestions based on the movies they've enjoyed in the past.  Recommendations will be supplied using the TasteDive API.
 
 ## LiveApp
-[viewpoint](https://pure-caverns-53726.herokuapp.com/ "viewpoint")
+[VIEWPOINT](https://pure-caverns-53726.herokuapp.com/ "VIEWPOINT")
 
 ## Views
 <img alt="screen-shot" src="https://imgplaceholder.com/420x320/ff7f7f/333333/fa-image">
