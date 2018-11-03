@@ -6,13 +6,15 @@ describe 'An authenticated user' do
     user = create(:user)
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     
-    movie_name = "Interstellar"
-    
+    movie = "Interstellar"
+
+    json_response = File.open('./fixtures/movie_search.json')
+    stub_request(:get, "https://tastedive.com/api/similar?q=#{movie}&k=#{ENV['TASTEDIVE_API_KEY']}&verbose=1&info").to_return(status: 200, body: json_response)
+
     visit dashboard_path
-
-    fill_in :search, with: movie_name
+    fill_in :search, with: movie
     click_button 'Search'
-
+    
     expect(current_path).to eq('/search')
     expect(page).to have_css(".movie", count: 20)
 
