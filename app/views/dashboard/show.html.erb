@@ -24,6 +24,7 @@
       <h1 class="title">
         Watch List
       </h1>
+    <div class="flagged_movies">
     <% current_user.movies.each do |movie| %>
     <ul class="movie">
       <li class="title"><%= movie.title %></li>

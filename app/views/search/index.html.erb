@@ -1,14 +1,21 @@
+<div class="control">
+  <%= button_to 'Dashboard', dashboard_path, method: :get, class: "button is-outlined is-warning" %>
+</div>
+
 <% @presenter.movies.each do |movie| %>
 <ul class="movie">
   <li class="title"><%= movie.title %></li>
   <li class="summary"><%= movie.summary %></li>
   <li class="trailer"><%= embed(movie.trailer_url) %></li>
+
   <%= form_tag movie_flags_path(movie) do %>
-   <%= hidden_field_tag "y-id", movie.y_id %>
-   <%= hidden_field_tag "title", movie.title %>
-   <%= hidden_field_tag "trailer", movie.trailer_url %>
-   <%= submit_tag("Flag") %>
-<% end %>
+    <div id= "<%= movie.y_id %>">
+      <%= hidden_field_tag "y_id", movie.y_id %>
+      <%= hidden_field_tag "title", movie.title %>
+      <%= hidden_field_tag "trailer", movie.trailer_url %>
+      <%= submit_tag("Flag") %>
+    </div>
+  <% end %>
 </ul>
 <% end %>
 
