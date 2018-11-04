@@ -1,6 +1,6 @@
 class User < ApplicationRecord
   validates_presence_of :email
-  has_many :flags
+  has_many :flags, dependent: :destroy
   has_many :movies, through: :flags
 
   def self.from_omniauth(auth)
