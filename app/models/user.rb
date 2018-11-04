@@ -1,5 +1,7 @@
 class User < ApplicationRecord
   validates_presence_of :email
+  has_many :flags, dependent: :destroy
+  has_many :movies, through: :flags
 
   def self.from_omniauth(auth)
     where(provider: auth.provider, uid: auth.uid).first_or_initialize.tap do |user|

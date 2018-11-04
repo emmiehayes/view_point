@@ -1,16 +1,18 @@
 require 'rails_helper'
 
-describe 'An authenticated user' do
-  scenario 'can successfully search for movie recommendations' do
+describe 'An authenticated user on their dashboard' do
+  before :each do
     user = create(:user)
     allow_any_instance_of(ApplicationController).to receive(:current_user).and_return(user)
     
-    movie = "Interstellar"
+    @movie = "Interstellar"
     json_response = File.open('./fixtures/movie_search.json')
-    stub_request(:get, "https://tastedive.com/api/similar?q=#{movie}&k=#{ENV['TASTEDIVE_API_KEY']}&verbose=1&info").to_return(status: 200, body: json_response)
-
+    stub_request(:get, "https://tastedive.com/api/similar?q=#{@movie}&k=#{ENV['TASTEDIVE_API_KEY']}&verbose=1&info").to_return(status: 200, body: json_response)
+  end
+  
+  scenario 'can successfully search for movie recommendations' do
     visit dashboard_path
-    fill_in :search, with: movie
+    fill_in :search, with: @movie
     click_button 'Search'
     
     expect(current_path).to eq('/search')
@@ -20,6 +22,12 @@ describe 'An authenticated user' do
       expect(page).to have_css(".summary")
       expect(page).to have_css(".trailer")
     end
+  end
+
+  scenario 'has an empty watch list to start' do
+    visit dashboard_path
+    expect(page).to have_content('Watch List')
+    expect(page).to have_css(".movie", count: 0)
   end
 end
 
