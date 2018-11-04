@@ -25,6 +25,7 @@ ActiveRecord::Schema.define(version: 20181103230021) do
   end
 
   create_table "movies", force: :cascade do |t|
+    t.string "y_id"
     t.string "title"
     t.string "summary"
     t.string "trailer_url"
