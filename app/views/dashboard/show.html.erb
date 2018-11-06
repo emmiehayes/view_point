@@ -1,34 +1,14 @@
-<section class="hero is-info is-fullheight">
-  <div class="control">
-    <%= button_to 'Sign Out', logout_path, method: :delete, class: "button is-outlined is-small is-warning" %>
-  </div>
-  <div class="hero-body">
-    <div class="container">
-      <h1 class="title">
-       Hello, <%= current_user.first_name %>
-      </h1>
-      <div class="container is-fluid has-text-centered">
-      <%= form_tag '/search', :method => 'get' do %>
-        <div class="field">
-          <div class="control">
-            <%= text_field_tag "search" %>
-          </div><br>
-          <div class="control">
-            <%= submit_tag 'Search', class: "button is-warning is-outlined" %>
-          </div>
-        </div>
-      <% end %>
-    </div>
-  </div>
-  <div class="container is-fluid has-text-centered">
-      <h1 class="title">
-        Watch List
-      </h1>
-    <div class="flagged_movies">
-    <% current_user.movies.each do |movie| %>
-    <ul class="movie">
-      <li class="title"><%= movie.title %></li>
-    </ul>
+<section class="hero">
+  <div class="search-box">
+    <%= form_tag :search, method: :get do %>
+      <div class="control">
+        <%= text_field_tag :search, placeholder="enter a movie..." %>
+        <br>
+        <%= date_field_tag :date %>
+      </div>
+      <div class="control">
+        <%= submit_tag 'Submit', class: "button is-dark is-large" %>
+      </div>
     <% end %>
   </div>
 </section>
