@@ -8,8 +8,4 @@ Rails.application.routes.draw do
 
   get '/dashboard', to: 'dashboard#show'
   get '/search', to: 'search#index'
-
-  resources :movies do
-    resources :flags, only: [:create, :destroy]
-  end 
-end
+end 
