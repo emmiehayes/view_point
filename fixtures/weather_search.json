@@ -1,0 +1,260 @@
+{
+  "location": {
+    "name": "Arvada",
+    "region": "Colorado",
+    "country": "USA",
+    "lat": 39.79,
+    "lon": -105.1,
+    "tz_id": "America/Denver",
+    "localtime_epoch": 1541546403,
+    "localtime": "2018-11-06 16:20"
+  },
+  "current": {
+    "last_updated_epoch": 1541545211,
+    "last_updated": "2018-11-06 16:00",
+    "temp_c": 9,
+    "temp_f": 48.2,
+    "is_day": 1,
+    "condition": {
+      "text": "Partly cloudy",
+      "icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+      "code": 1003
+    },
+    "wind_mph": 17.4,
+    "wind_kph": 28.1,
+    "wind_degree": 280,
+    "wind_dir": "W",
+    "pressure_mb": 1016,
+    "pressure_in": 30.5,
+    "precip_mm": 0,
+    "precip_in": 0,
+    "humidity": 25,
+    "cloud": 50,
+    "feelslike_c": 5.4,
+    "feelslike_f": 41.7,
+    "vis_km": 80,
+    "vis_miles": 49,
+    "uv": 3
+  },
+  "forecast": {
+    "forecastday": [
+      {
+        "date": "2018-11-06",
+        "date_epoch": 1541462400,
+        "day": {
+          "maxtemp_c": 8.2,
+          "maxtemp_f": 46.8,
+          "mintemp_c": -3.8,
+          "mintemp_f": 25.2,
+          "avgtemp_c": 3.8,
+          "avgtemp_f": 38.9,
+          "maxwind_mph": 7.8,
+          "maxwind_kph": 12.6,
+          "totalprecip_mm": 0,
+          "totalprecip_in": 0,
+          "avgvis_km": 18.7,
+          "avgvis_miles": 11,
+          "avghumidity": 43,
+          "condition": {
+            "text": "Partly cloudy",
+            "icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+            "code": 1003
+          },
+          "uv": 3.2
+        },
+        "astro": {
+          "sunrise": "06:35 AM",
+          "sunset": "04:53 PM",
+          "moonrise": "05:18 AM",
+          "moonset": "04:47 PM"
+        }
+      },
+      {
+        "date": "2018-11-07",
+        "date_epoch": 1541548800,
+        "day": {
+          "maxtemp_c": 5.2,
+          "maxtemp_f": 41.4,
+          "mintemp_c": -2.8,
+          "mintemp_f": 27,
+          "avgtemp_c": 0.8,
+          "avgtemp_f": 33.5,
+          "maxwind_mph": 8.5,
+          "maxwind_kph": 13.7,
+          "totalprecip_mm": 0.7,
+          "totalprecip_in": 0.03,
+          "avgvis_km": 18.6,
+          "avgvis_miles": 11,
+          "avghumidity": 56,
+          "condition": {
+            "text": "Patchy moderate snow",
+            "icon": "//cdn.apixu.com/weather/64x64/day/329.png",
+            "code": 1216
+          },
+          "uv": 3.4
+        },
+        "astro": {
+          "sunrise": "06:36 AM",
+          "sunset": "04:52 PM",
+          "moonrise": "06:23 AM",
+          "moonset": "05:21 PM"
+        }
+      },
+      {
+        "date": "2018-11-08",
+        "date_epoch": 1541635200,
+        "day": {
+          "maxtemp_c": 2.2,
+          "maxtemp_f": 36,
+          "mintemp_c": -4.8,
+          "mintemp_f": 23.4,
+          "avgtemp_c": -0.9,
+          "avgtemp_f": 30.3,
+          "maxwind_mph": 6.9,
+          "maxwind_kph": 11.2,
+          "totalprecip_mm": 0,
+          "totalprecip_in": 0,
+          "avgvis_km": 18.3,
+          "avgvis_miles": 11,
+          "avghumidity": 59,
+          "condition": {
+            "text": "Partly cloudy",
+            "icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+            "code": 1003
+          },
+          "uv": 3
+        },
+        "astro": {
+          "sunrise": "06:37 AM",
+          "sunset": "04:51 PM",
+          "moonrise": "07:28 AM",
+          "moonset": "05:57 PM"
+        }
+      },
+      {
+        "date": "2018-11-09",
+        "date_epoch": 1541721600,
+        "day": {
+          "maxtemp_c": 7.2,
+          "maxtemp_f": 45,
+          "mintemp_c": -0.8,
+          "mintemp_f": 30.6,
+          "avgtemp_c": 1,
+          "avgtemp_f": 33.7,
+          "maxwind_mph": 6.7,
+          "maxwind_kph": 10.8,
+          "totalprecip_mm": 0,
+          "totalprecip_in": 0,
+          "avgvis_km": 20,
+          "avgvis_miles": 12,
+          "avghumidity": 37,
+          "condition": {
+            "text": "Partly cloudy",
+            "icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+            "code": 1003
+          },
+          "uv": 3
+        },
+        "astro": {
+          "sunrise": "06:38 AM",
+          "sunset": "04:50 PM",
+          "moonrise": "08:30 AM",
+          "moonset": "06:37 PM"
+        }
+      },
+      {
+        "date": "2018-11-10",
+        "date_epoch": 1541808000,
+        "day": {
+          "maxtemp_c": 10.2,
+          "maxtemp_f": 50.4,
+          "mintemp_c": -2.8,
+          "mintemp_f": 27,
+          "avgtemp_c": 3.6,
+          "avgtemp_f": 38.4,
+          "maxwind_mph": 7.6,
+          "maxwind_kph": 12.2,
+          "totalprecip_mm": 0,
+          "totalprecip_in": 0,
+          "avgvis_km": 20,
+          "avgvis_miles": 12,
+          "avghumidity": 31,
+          "condition": {
+            "text": "Partly cloudy",
+            "icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+            "code": 1003
+          },
+          "uv": 0
+        },
+        "astro": {
+          "sunrise": "06:39 AM",
+          "sunset": "04:49 PM",
+          "moonrise": "09:29 AM",
+          "moonset": "07:21 PM"
+        }
+      },
+      {
+        "date": "2018-11-11",
+        "date_epoch": 1541894400,
+        "day": {
+          "maxtemp_c": 6.2,
+          "maxtemp_f": 43.2,
+          "mintemp_c": -2.8,
+          "mintemp_f": 27,
+          "avgtemp_c": 1.2,
+          "avgtemp_f": 34.2,
+          "maxwind_mph": 4.9,
+          "maxwind_kph": 7.9,
+          "totalprecip_mm": 1.1,
+          "totalprecip_in": 0.04,
+          "avgvis_km": 17.4,
+          "avgvis_miles": 10,
+          "avghumidity": 47,
+          "condition": {
+            "text": "Patchy heavy snow",
+            "icon": "//cdn.apixu.com/weather/64x64/day/335.png",
+            "code": 1222
+          },
+          "uv": 39960
+        },
+        "astro": {
+          "sunrise": "06:40 AM",
+          "sunset": "04:48 PM",
+          "moonrise": "10:23 AM",
+          "moonset": "08:09 PM"
+        }
+      },
+      {
+        "date": "2018-11-12",
+        "date_epoch": 1541980800,
+        "day": {
+          "maxtemp_c": 2.2,
+          "maxtemp_f": 36,
+          "mintemp_c": -5.8,
+          "mintemp_f": 21.6,
+          "avgtemp_c": -1.1,
+          "avgtemp_f": 30.1,
+          "maxwind_mph": 6.9,
+          "maxwind_kph": 11.2,
+          "totalprecip_mm": 0,
+          "totalprecip_in": 0,
+          "avgvis_km": 19.9,
+          "avgvis_miles": 12,
+          "avghumidity": 51,
+          "condition": {
+            "text": "Partly cloudy",
+            "icon": "//cdn.apixu.com/weather/64x64/day/116.png",
+            "code": 1003
+          },
+          "uv": 39960
+        },
+        "astro": {
+          "sunrise": "06:42 AM",
+          "sunset": "04:47 PM",
+          "moonrise": "11:12 AM",
+          "moonset": "09:01 PM"
+        }
+      }
+    ]
+  }
+}

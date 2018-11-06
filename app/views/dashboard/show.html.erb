@@ -2,7 +2,9 @@
   <div class="search-box">
     <%= form_tag :search, method: :get do %>
       <div class="control">
-        <%= text_field_tag :search, placeholder="enter a movie..." %>
+        <%= text_field_tag :movie, placeholder="enter a movie..." %>
+        <br>
+        <%= text_field_tag :zipcode, placeholder="enter your zipcode" %>
         <br>
         <%= date_field_tag :date %>
       </div>
