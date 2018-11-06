@@ -1,14 +1,10 @@
-class RecommendationService
+class MovieService
 
-  def initialize(movie)
-    @movie = movie
+  def initialize(search_params)
+    @movie = search_params[:movie]
   end
 
-  def raw_search_movie
-    parse_json[:Similar][:Info]
-  end
-
-  def raw_search_results
+  def raw_movie_results
     parse_json[:Similar][:Results]
   end
 
