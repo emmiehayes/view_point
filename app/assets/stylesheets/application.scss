@@ -17,9 +17,61 @@
 $info: #CAEBF2;
 $link: #5CC9E7;
 $danger: #F71735;
-$warning: #FF9F1C;
-$dark: #011627;
+$warning: rgb(237, 166, 68);
+$dark: #262280;
 $font-family: 'Open Sans', sans-serif;
 $font-family: 'Oswald', sans-serif;
 $font-family: 'Roboto', sans-serif;
 @import "bulma";
+
+html {
+  background-color: #CAEBF2;
+}
+
+.navbar {
+  height: 8vh;
+}
+
+.hero {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('https://cl.ly/7b4c4a546463/Screen%20Shot%202018-11-06%20at%202.01.15%20PM.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.title {
+  color: #262280;
+  font-family: 'Megrim', cursive;
+  font-size: 100px;
+  padding: 5%;
+}
+
+p {
+  color: #262280;
+  font-family: 'Megrim', cursive;
+  font-size: 50px;
+   padding: 5%;
+}
+
+.search-box{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  margin-left: 20px;
+}
+
+#date, #search{
+  width: 20%;
+  height: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 200%;
+  opacity: 0.5;
+  font-family: 'Open Sans', sans-serif;
+  color: darkslategrey;
+}
+
+.control{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
