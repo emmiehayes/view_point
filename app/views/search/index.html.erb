@@ -1,9 +1,19 @@
-
-
 <% @presenter.movies.each do |recommended_movie| %>
 <ul class="movie">
   <li class="title"><%= recommended_movie.title %></li>
   <li class="summary"><%= recommended_movie.summary %></li>
   <li class="trailer"><%= embed(recommended_movie.trailer_url) %></li>
+</ul>
+<% end %>
+
+<% @presenter.forecast.each do |day| %>
+<ul class="condition">
+  <li class="sunset"><%= day.sunset %></li>
+  <li class="moonrise"><%= day.moonrise %></li>
+  <li class="high"><%= day.high %></li>
+  <li class="low"><%= day.low %></li>
+  <li class="description"><%= day.description %></li>
+  <li class="date"><%= day.date %></li>
+  <li class="day"><%= day.day %></li>
 </ul>
 <% end %>
