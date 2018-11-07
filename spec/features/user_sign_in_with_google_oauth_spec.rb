@@ -1,12 +1,13 @@
 require 'rails_helper'
 
 describe 'A visitor visiting the homepage' do
-  scenario 'can successfully log in and out via google authorization' do
+  it 'can successfully log in and out via google authorization' do
     stub_omniauth
 
     expect(User.count).to eq(0)
-    
-    visit root_path
+
+    visit '/'
+
     click_button 'Sign in with Google'
 
     expect(current_path).to eq('/dashboard')

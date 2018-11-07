@@ -4,10 +4,6 @@ class RecommendedMovie
     @data = data 
   end
 
-  def y_id
-    data[:yID]
-  end
-
   def title
     data[:Name]
   end

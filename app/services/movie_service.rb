@@ -22,6 +22,6 @@ class MovieService
   end
 
   def response
-    conn.get("/api/similar?q=#{movie}&k=#{ENV["TASTEDIVE_API_KEY"]}&verbose=1&info")
+    conn.get("/api/similar?q=#{movie}&k=#{ENV["TASTEDIVE_API_KEY"]}&verbose=1&info&limit=5")
   end
 end
