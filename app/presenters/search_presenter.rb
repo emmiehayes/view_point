@@ -3,7 +3,6 @@ class SearchPresenter
   def initialize(search_params)
     @movie_service = MovieService.new(search_params)
     @weather_service = WeatherService.new(search_params)
-    @date = search_params[:date]
   end
 
   def movies 

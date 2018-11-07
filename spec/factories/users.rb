@@ -1,11 +1,11 @@
 FactoryBot.define do
   factory :user do
-    provider { "MyString" }
-    uid { "MyString" }
-    email { "MyString" }
-    first_name { "MyString" }
-    token { "MyString" }
-    refresh_token { "MyString" }
-    oauth_expires_at { "2018-11-02 19:14:08" }
+    provider { "google_oauth2" }
+    uid { "12345678910" }
+    email { "emmiehayes2@gmail.com" }
+    first_name { "Emmie" }
+    token { "abcdefg12345" }
+    refresh_token { "12345abcdefg" }
+    oauth_expires_at { DateTime.now }
   end
 end

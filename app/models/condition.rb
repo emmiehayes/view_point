@@ -5,11 +5,7 @@ class Condition
   end
 
   def moonrise 
-    condition[:astro][:moonrise]
-  end
-
-  def sunset
-    condition[:astro][:sunset]
+    condition[:astro][:moonset]
   end
 
   def day 
@@ -30,10 +26,6 @@ class Condition
 
   def description 
     condition[:day][:condition][:text]
-  end
-  
-  def max_winds 
-    condition[:day][:maxwind_mph]
   end
 
   def icon 
