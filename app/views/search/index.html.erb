@@ -1,19 +1,45 @@
-<% @presenter.movies.each do |recommended_movie| %>
-<ul class="movie">
-  <li class="title"><%= recommended_movie.title %></li>
-  <li class="summary"><%= recommended_movie.summary %></li>
-  <li class="trailer"><%= embed(recommended_movie.trailer_url) %></li>
-</ul>
-<% end %>
+<br>
+<div class="container">
+  <div class="tile is-ancestor">
+    <div class="tile is-12 is-vertical is-parent">
+      <div class="tile is-child box">
+        <div class="prompt">
+          <h3>Top 5 movie suggestions just for <strong>YOU</strong>, plus a 7-day forecast...</h3>
+          
+          <h4>CHEERS to planning movie night in your backyard!</h4>
+        </div>
+      </div>
+    </div>
+  </div>
 
-<% @presenter.forecast.each do |day| %>
-<ul class="condition">
-  <li class="sunset"><%= day.sunset %></li>
-  <li class="moonrise"><%= day.moonrise %></li>
-  <li class="high"><%= day.high %></li>
-  <li class="low"><%= day.low %></li>
-  <li class="description"><%= day.description %></li>
-  <li class="date"><%= day.date %></li>
-  <li class="day"><%= day.day %></li>
-</ul>
-<% end %>
+<div class="tile is-ancestor">
+  <div class="tile is-3 is-vertical is-parent">
+    <div class="tile is-child box">
+    <% @presenter.forecast.each do |day| %>
+      <div class="condition">
+        <div class="day"><%= day.day %>, <%= day.date %></div>
+        <div class="description"><%= day.description %></div>
+        <div class="moonrise"><i class="fas fa-moon"></i> <%= day.moonrise %></div>
+        <div class="temperatures">High:<%= day.high %> Low: <%= day.low %></div>
+        <%= image_tag (day.icon) %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+  <div class="tile is-parent">
+    <div class="tile is-child box">
+        <% @presenter.movies.each do |recommended_movie| %>
+          <div class="movie">
+            <div class="movie-title"><%= recommended_movie.title %></div>
+              <ul>
+                <li id="video"><%= embed(recommended_movie.trailer_url) %></li>
+                <li id="summary"><%= recommended_movie.summary %></li>
+              </ul>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
